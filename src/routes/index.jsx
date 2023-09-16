@@ -5,8 +5,10 @@ import {
   Routes as RoutesWrapper,
   Route,
 } from "react-router-dom";
-import { HOME } from "./URLs";
+import { HOME,PRODUCTS } from "./URLs";
 import Home from "../pages/home";
+import Products from "../pages/products";
+
 
 export default function Routes() {
   const queryClient = new QueryClient();
@@ -16,6 +18,8 @@ export default function Routes() {
       <QueryClientProvider client={queryClient}>
         <RoutesWrapper>
           <Route path={HOME} element={<Home />} />
+          <Route path={PRODUCTS} element={<Products />} />
+
         </RoutesWrapper>
       </QueryClientProvider>
     </BrowserRouter>
