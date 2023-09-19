@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Wrapper,
   Image,
@@ -18,18 +18,27 @@ import {
   Option,
 } from "./styles";
 import CheckIcon from "@mui/icons-material/Check";
+import { useLocation } from "react-router-dom";
 
 export default function ProductDetails() {
+  const {
+    state: { url, sizes, title, category },
+  } = useLocation();
+  const { REACT_APP_BASE_URL } = process.env;
+  const [size, setSize] = useState("small");
+
+  const { price } = sizes?.find((elm) => elm.size === size);
+
   return (
     <Wrapper>
       <Container>
-        <Image src="https://onlinemenudt.amaleenrestaurant.com/wp-content/uploads/2023/07/batatam.jpg" />
+        <Image src={`${REACT_APP_BASE_URL}${url}`} />
         <ContentContainer>
-          <Title> Batata Zehlawiye</Title>
-          <Price>$6.00</Price>
+          <Title>{title}</Title>
+          <Price>${price}</Price>
           <Divider />
           <CategoryText>
-            Category: <span style={categoryStyle}>Cold Mezza</span>
+            Category: <span style={categoryStyle}>{category}</span>
           </CategoryText>
           <ListContainer>
             <ListItem>
@@ -51,10 +60,12 @@ export default function ProductDetails() {
           </ListContainer>
           <SelectContainer>
             <Text>Sizes</Text>
-            <Select>
-              <Option>Small</Option>
-              <Option>Medium</Option>
-              <Option>Large</Option>
+            <Select onChange={({ target: { value } }) => setSize(value)}>
+              <Option value="small" selected>
+                Small
+              </Option>
+              <Option value="medium">Medium</Option>
+              <Option value="large">Large</Option>
             </Select>
           </SelectContainer>
         </ContentContainer>
