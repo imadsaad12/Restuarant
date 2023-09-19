@@ -21,6 +21,7 @@ export const Image = styled.img`
   height: 15em;
   border-radius: 5px;
   margin-bottom: 5px;
+  line-height: 0;
   filter: ${(props) => (props.displayCategory ? "blur(0)" : "blur(5px)")};
   transition: all 0.1s ease-in;
   cursor: pointer;
