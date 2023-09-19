@@ -17,7 +17,6 @@ color:#777;
   }
 `
 export const Category = styled.span`
-font-weight:semi-bold;
 font-size:55px;
 
 `
@@ -58,6 +57,7 @@ color:#777;
 export const Select=styled.select`
 background-color: transparent;
 font-size: 16px;
+border-color: #dddddd;
 &:focus{
   outline: none;
 }
@@ -71,6 +71,7 @@ align-items: center;
 flex-direction: column;
 margin-top: 30px;
 gap: 10px;
+cursor: pointer;
 @media (max-width: 768px) {
   width: 50%;
   }

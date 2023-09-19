@@ -8,7 +8,7 @@ import {
 import { HOME,PRODUCTS } from "./URLs";
 import Home from "../pages/home";
 import Products from "../pages/products";
-
+import HOC from "../HOC"
 
 export default function Routes() {
   const queryClient = new QueryClient();
@@ -17,8 +17,8 @@ export default function Routes() {
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <RoutesWrapper>
-          <Route path={HOME} element={<Home />} />
-          <Route path={PRODUCTS} element={<Products />} />
+          <Route path={HOME} element={HOC(Home)} />
+          <Route path={PRODUCTS} element={HOC(Products)} />
 
         </RoutesWrapper>
       </QueryClientProvider>

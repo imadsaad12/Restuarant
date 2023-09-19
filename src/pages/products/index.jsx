@@ -9,9 +9,8 @@ export default function Index() {
   const { category } = useParams();
 
   return (
-    <PageLayout>
+    <>
     <ProductsLayout>
-        <RestaurantImage style={{backgroundImage: "url(https://dccool.com/sites/default/files/2023-07/Untitled%20design%20%2812%29.jpg)"}}  />
         <ProductsHeader category={category}/>
         <ProductsContainer>
             <Product/>
@@ -25,6 +24,6 @@ export default function Index() {
 
         </ProductsContainer>
     </ProductsLayout>
-    </PageLayout>
+    </>
   )
 }
