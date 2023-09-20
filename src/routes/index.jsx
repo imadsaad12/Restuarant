@@ -5,10 +5,11 @@ import {
   Routes as RoutesWrapper,
   Route,
 } from "react-router-dom";
-import { HOME,PRODUCTS } from "./URLs";
+import { HOME, PRODUCT_DETAILS, PRODUCTS } from "./URLs";
 import Home from "../pages/home";
+import ProductDetails from "../pages/product-details";
 import Products from "../pages/products";
-import HOC from "../HOC"
+import HOC from "../HOC";
 
 export default function Routes() {
   const queryClient = new QueryClient();
@@ -19,7 +20,7 @@ export default function Routes() {
         <RoutesWrapper>
           <Route path={HOME} element={HOC(Home)} />
           <Route path={PRODUCTS} element={HOC(Products)} />
-
+          <Route path={PRODUCT_DETAILS} element={HOC(ProductDetails)} />
         </RoutesWrapper>
       </QueryClientProvider>
     </BrowserRouter>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Container, Image, Title } from "./styles";
+import { useNavigate } from "react-router-dom";
 
 export default function Category({
   attributes: {
@@ -14,6 +15,11 @@ export default function Category({
 }) {
   const [displayCategory, setDisplayCategory] = useState(true);
   const { REACT_APP_BASE_URL } = process.env;
+  const navigate = useNavigate();
+
+  const handleOnClick = () => {
+    navigate(`/products/${title}`);
+  };
 
   return (
     <Container
@@ -24,7 +30,11 @@ export default function Category({
         displayCategory={displayCategory}
         src={`${REACT_APP_BASE_URL}${url}`}
       />
-      {displayCategory ? <Title>{title}</Title> : <Button>Try it </Button>}
+      {displayCategory ? (
+        <Title>{title}</Title>
+      ) : (
+        <Button onClick={handleOnClick}>check it </Button>
+      )}
     </Container>
   );
 }
