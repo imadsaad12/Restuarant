@@ -28,12 +28,14 @@ export default function Category({
     >
       <Image
         displayCategory={displayCategory}
-        src={`${REACT_APP_BASE_URL}${url}`}
+        // src={`${REACT_APP_BASE_URL}${url}`}
+        src={url}
       />
       {displayCategory ? (
-        <Title>{title}</Title>
+        // <Title>{title}</Title>
+        <Title>{}</Title>
       ) : (
-        <Button onClick={handleOnClick}>check it </Button>
+        <Button onClick={handleOnClick}>Try it </Button>
       )}
     </Container>
   );

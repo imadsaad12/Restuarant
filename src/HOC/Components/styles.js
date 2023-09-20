@@ -12,8 +12,8 @@ export const FooterContainer = styled.div`
 
 export const RestaurantImage = styled.img`
   width: 100%;
-  height: 15em;
   background-size: contain;
+  height: 13em;
 `;
 
 export const FooterLeft = styled.div`

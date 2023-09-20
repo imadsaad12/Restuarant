@@ -36,7 +36,8 @@ const Product = ({
   return (
     <ProductContainer onClick={handleOnClick}>
       <ImageContainer>
-        <ProductImage src={`${REACT_APP_BASE_URL}${url}`} />
+        {/* <ProductImage src={`${REACT_APP_BASE_URL}${url}`} /> */}
+        <ProductImage src={url} />
         <ProductPrice>{price}$</ProductPrice>
       </ImageContainer>
       <ProductCategory>{category} </ProductCategory>

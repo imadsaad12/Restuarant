@@ -15,7 +15,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 85%;
+  width: 93%;
   @media (max-width: 920px) {
     flex-direction: column;
     margin-top: 1em;
@@ -23,8 +23,8 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   @media (max-width: 920px) {
     width: 90%;

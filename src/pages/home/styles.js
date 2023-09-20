@@ -18,8 +18,15 @@ export const CategoriesContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  overflow: scroll;
+  width: 90%;
   margin-top: 3em;
-  height: 70vh;
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  height: 90%;
   gap: 5px;
+  @media (max-width: 900px) {
+    height: 90%;
+  }
 `;
