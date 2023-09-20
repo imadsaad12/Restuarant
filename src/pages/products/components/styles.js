@@ -80,6 +80,7 @@ cursor: pointer;
   }
 `;
 
+
 export const ImageContainer = styled.div`
 width: 90%;
 position: relative;
@@ -130,6 +131,40 @@ export const ProductCategory = styled.span`
 font-size: 17px;
 font-weight: normal;
 color:#777;
+
+`;
+
+
+export const SkeletonContainer = styled.div`
+width: 25%;
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-top: 30px;
+gap: 10px;
+cursor: pointer;
+@media (max-width: 768px) {
+  width: 50%;
+  }
+  @media (max-width: 450px) {
+  width: 100%;
+  }
+`;
+
+
+export const SkeletonImage = styled.div`
+width: 90%;
+height: 15em;
+background-color: gray;
+@media (max-width: 450px) {
+  width: 70%;
+  }
+`;
+
+export const SkeletonSpan = styled.span`
+background-color:gray ;
+width: 50px;
+height: 10px;
 
 `;
 
