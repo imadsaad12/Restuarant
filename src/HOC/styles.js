@@ -12,6 +12,7 @@ export const PageLayout = styled.div`
   background-color: #f5f5f5;
   width: 100%;
   /* height: 50%; */
+  margin-bottom: 2em;
   @media (max-width: 900px) {
     /* height: auto; */
   }
