@@ -21,10 +21,9 @@ export default function Index() {
       <ProductsLayout>
         <ProductsHeader category={category} />
         <ProductsContainer>
-          {!isLoading &&
-            data?.data?.data?.map((product) => {
-              return <Product {...product} />;
-            })}
+          {data?.data?.data?.map((product) => {
+            return <Product {...product} />;
+          })}
         </ProductsContainer>
       </ProductsLayout>
     </>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,13 +18,13 @@ export const CategoriesContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  overflow: scroll;
+  /* overflow: scroll; */
   width: 90%;
   margin-top: 3em;
   &::-webkit-scrollbar {
     width: 0.5em;
   }
-  height: 90%;
+  height: auto;
   gap: 5px;
   @media (max-width: 900px) {
     height: 90%;
