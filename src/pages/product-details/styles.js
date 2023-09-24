@@ -40,7 +40,8 @@ export const ContentContainer = styled.div`
 `;
 
 export const Title = styled.p`
-  font-size: 3em;
+  font-size: 2.5em;
+  width: fit-content;
   color: black;
   font-family: monospace;
   align-self: flex-start;

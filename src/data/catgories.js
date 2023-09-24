@@ -3,11 +3,11 @@ export const data = {
     data: [
       {
         attributes: {
-          title: "Cocktails",
+          title: "Cocktails-الكوكتيلات",
           image: {
             data: {
               attributes: {
-                url: "https://rest.thrubits.com/uploads/restorants_icon/1629880107.jpeg",
+                url: "https://onlinemenudt.amaleenrestaurant.com/wp-content/uploads/2023/07/eggplantsalad.jpg",
               },
             },
           },
@@ -15,11 +15,11 @@ export const data = {
       },
       {
         attributes: {
-          title: "Juices",
+          title: "Juices-العصائر",
           image: {
             data: {
               attributes: {
-                url: "https://rest.thrubits.com/uploads/restorants_icon/1629892830.jpeg",
+                url: "https://onlinemenudt.amaleenrestaurant.com/wp-content/uploads/2023/07/beefpicata.jpg",
               },
             },
           },
@@ -27,11 +27,11 @@ export const data = {
       },
       {
         attributes: {
-          title: "Ice Cream",
+          title: "Ice Cream-بوظة",
           image: {
             data: {
               attributes: {
-                url: "https://rest.thrubits.com/uploads/restorants_icon/1629908825.jpeg",
+                url: "https://onlinemenudt.amaleenrestaurant.com/wp-content/uploads/2023/07/artichok.jpg",
               },
             },
           },
@@ -39,11 +39,11 @@ export const data = {
       },
       {
         attributes: {
-          title: "Crepes",
+          title: "Crepes-كريب",
           image: {
             data: {
               attributes: {
-                url: "https://rest.thrubits.com/uploads/restorants_icon/1629880779.jpeg",
+                url: "https://onlinemenudt.amaleenrestaurant.com/wp-content/uploads/2022/11/kebbehmaamoul-1.jpg",
               },
             },
           },
@@ -51,11 +51,11 @@ export const data = {
       },
       {
         attributes: {
-          title: "Waffles",
+          title: "Waffles - الفطائر",
           image: {
             data: {
               attributes: {
-                url: "https://rest.thrubits.com/uploads/restorants_icon/1629889367.jpeg",
+                url: "https://onlinemenudt.amaleenrestaurant.com/wp-content/uploads/2021/11/hindbeh-tarator.jpg",
               },
             },
           },
@@ -63,11 +63,11 @@ export const data = {
       },
       {
         attributes: {
-          title: "Ashta Plates",
+          title: "Ashta - أشتا",
           image: {
             data: {
               attributes: {
-                url: "https://rest.thrubits.com/uploads/restorants_icon/1629908429.jpeg",
+                url: "https://onlinemenudt.amaleenrestaurant.com/wp-content/uploads/2023/07/frake.jpg",
               },
             },
           },
@@ -79,7 +79,7 @@ export const data = {
           image: {
             data: {
               attributes: {
-                url: "https://rest.thrubits.com/uploads/restorants_icon/1629908334.jpeg",
+                url: "https://onlinemenudt.amaleenrestaurant.com/wp-content/uploads/2021/11/garlic-labneh-600x450.jpg",
               },
             },
           },
@@ -87,11 +87,11 @@ export const data = {
       },
       {
         attributes: {
-          title: "Cups",
+          title: "Cups - أكواب",
           image: {
             data: {
               attributes: {
-                url: "https://rest.thrubits.com/uploads/restorants_icon/1629963244.jpeg",
+                url: "https://onlinemenudt.amaleenrestaurant.com/wp-content/uploads/2021/11/mutabbalreg.jpg",
               },
             },
           },

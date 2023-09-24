@@ -25,7 +25,9 @@ const Product = ({
   const { REACT_APP_BASE_URL } = process.env;
   const navigate = useNavigate();
 
-  const { price } = sizes.find(({ size }) => size === "large");
+  const arrayOfPrices = sizes.map(({ price }) => price);
+  const maxPrice = Math.max(...arrayOfPrices);
+  const minPrice = Math.min(...arrayOfPrices);
 
   const handleOnClick = () => {
     navigate(`/products/${category}/${title}`, {
@@ -38,7 +40,9 @@ const Product = ({
       <ImageContainer>
         {/* <ProductImage src={`${REACT_APP_BASE_URL}${url}`} /> */}
         <ProductImage src={url} />
-        <ProductPrice>{price}$</ProductPrice>
+        <ProductPrice>
+          {maxPrice} ~ {minPrice} $
+        </ProductPrice>
       </ImageContainer>
       <ProductCategory>{category} </ProductCategory>
       <ProductName>{title} </ProductName>
