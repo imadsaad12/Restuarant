@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Container, Image, Title } from "./styles";
+import { Button, Container, Image, Title, TitleContainer } from "./styles";
 import { useNavigate } from "react-router-dom";
 
 export default function Category({
@@ -22,19 +22,15 @@ export default function Category({
   };
 
   return (
-    <Container
-      onMouseEnter={() => setDisplayCategory(false)}
-      onMouseLeave={() => setDisplayCategory(true)}
-    >
+    <Container>
       <Image
-        displayCategory={displayCategory}
-        src={`${REACT_APP_BASE_URL}${url}`}
+        onClick={handleOnClick}
+        // src={`${REACT_APP_BASE_URL}${url}`}
+        src={url}
       />
-      {displayCategory ? (
+      <TitleContainer>
         <Title>{title}</Title>
-      ) : (
-        <Button onClick={handleOnClick}>check it </Button>
-      )}
+      </TitleContainer>
     </Container>
   );
 }

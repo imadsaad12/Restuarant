@@ -12,8 +12,10 @@ export const FooterContainer = styled.div`
 
 export const RestaurantImage = styled.img`
   width: 100%;
-  height: 15em;
-  background-size: contain;
+  height: 13em;
+  @media (max-width: 920px) {
+    height: 10em;
+  }
 `;
 
 export const FooterLeft = styled.div`
@@ -37,4 +39,24 @@ export const Link = styled.a`
   &:hover {
     color: gray;
   }
+`;
+
+export const Logo = styled.img`
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  position: absolute;
+  left: 3em;
+  top: 2em;
+  cursor: pointer;
+  @media (max-width: 920px) {
+    width: 6em;
+    height: 6em;
+    left: 1em;
+    top: 2em;
+  }
+`;
+
+export const HeaderContainer = styled.div`
+  position: relative;
 `;

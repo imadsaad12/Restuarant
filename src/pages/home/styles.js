@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  background-color: #1e1810;
+  /* background-size: auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,8 +20,16 @@ export const CategoriesContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  /* overflow: scroll; */
+  width: 90%;
   margin-top: 3em;
-  height: 70vh;
-  gap: 5px;
+  margin-bottom: 3em;
+  &::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  height: auto;
+  gap: 1em;
+  @media (max-width: 900px) {
+    height: 90%;
+  }
 `;

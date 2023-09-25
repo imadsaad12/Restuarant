@@ -6,7 +6,7 @@ import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 export default function Footer() {
   return (
     <FooterContainer>
-      <FooterLeft>Copyright © 2023 | Amaleen DownTown</FooterLeft>
+      <FooterLeft>Copyright © 2023 | Our-Resto DownTown</FooterLeft>
       <FooterRight>
         <Link href="http://www.facebook.com">
           <BsFacebook />

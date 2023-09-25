@@ -32,7 +32,8 @@ export default function ProductDetails() {
   return (
     <Wrapper>
       <Container>
-        <Image src={`${REACT_APP_BASE_URL}${url}`} />
+        {/* <Image src={`${REACT_APP_BASE_URL}${url}`} /> */}
+        <Image src={url} />
         <ContentContainer>
           <Title>{title}</Title>
           <Price>${price}</Price>

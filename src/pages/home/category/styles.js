@@ -6,14 +6,13 @@ export const Container = styled.div`
   position: relative;
 `;
 export const Title = styled.p`
-  position: absolute;
+  /* position: absolute; */
+  text-align: center;
   font-size: 2em;
   color: white;
   font-weight: bold;
   font-family: monospace;
   font-style: italic;
-  left: 35%;
-  top: 35%;
 `;
 
 export const Image = styled.img`
@@ -22,8 +21,6 @@ export const Image = styled.img`
   border-radius: 5px;
   margin-bottom: 5px;
   line-height: 0;
-  filter: ${(props) => (props.displayCategory ? "blur(0)" : "blur(5px)")};
-  transition: all 0.1s ease-in;
   cursor: pointer;
 `;
 
@@ -44,4 +41,10 @@ export const Button = styled.button`
     background-color: white;
     color: black;
   }
+`;
+
+export const TitleContainer = styled.div`
+  position: absolute;
+  width: 100%;
+  top: 60%;
 `;
