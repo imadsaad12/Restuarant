@@ -13,6 +13,9 @@ export const FooterContainer = styled.div`
 export const RestaurantImage = styled.img`
   width: 100%;
   height: 13em;
+  background-size: cover;
+  background-image: url(${props=>props.image});
+
   @media (max-width: 920px) {
     height: 10em;
   }

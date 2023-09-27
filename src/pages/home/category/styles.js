@@ -6,13 +6,13 @@ export const Container = styled.div`
   position: relative;
 `;
 export const Title = styled.p`
-  /* position: absolute; */
   text-align: center;
   font-size: 2em;
   color: white;
-  font-weight: bold;
-  font-family: monospace;
-  font-style: italic;
+  /* font-weight: bold; */
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  cursor: pointer;
 `;
 
 export const Image = styled.img`
@@ -24,24 +24,6 @@ export const Image = styled.img`
   cursor: pointer;
 `;
 
-export const Button = styled.button`
-  width: 40%;
-  height: 2em;
-  position: absolute;
-  border: 1px solid white;
-  background-color: transparent;
-  color: white;
-  border-radius: 5px;
-  font-family: monospace;
-  font-style: italic;
-  left: 28%;
-  font-size: 2em;
-  top: 40%;
-  &:hover {
-    background-color: white;
-    color: black;
-  }
-`;
 
 export const TitleContainer = styled.div`
   position: absolute;

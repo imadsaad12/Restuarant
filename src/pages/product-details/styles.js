@@ -43,7 +43,7 @@ export const Title = styled.p`
   font-size: 2.5em;
   width: fit-content;
   color: black;
-  font-family: monospace;
+  /* font-family: monospace; */
   align-self: flex-start;
   margin-left: 1em;
   margin-top: -0.1em;
@@ -57,9 +57,7 @@ export const Price = styled.p`
   color: #62615b;
   margin-left: 1.5em;
   margin-top: -1em;
-  font-weight: 500;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
   @media (max-width: 920px) {
     margin-left: 0.5em;
   }

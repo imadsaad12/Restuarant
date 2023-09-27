@@ -4,8 +4,9 @@ import {
   ProductImage,
   ProductName,
   ProductPrice,
-  ProductCategory,
+  ProductDescription,
   ImageContainer,
+  ProductDetails,
 } from "./styles";
 import { useNavigate } from "react-router-dom";
 
@@ -13,6 +14,7 @@ const Product = ({
   attributes: {
     title,
     category,
+    description,
     sizes,
     image: {
       data: {
@@ -40,12 +42,15 @@ const Product = ({
       <ImageContainer>
         {/* <ProductImage src={`${REACT_APP_BASE_URL}${url}`} /> */}
         <ProductImage src={url} />
-        <ProductPrice>
+        {/* <ProductPrice>
           {maxPrice} ~ {minPrice} $
-        </ProductPrice>
+        </ProductPrice> */}
       </ImageContainer>
-      <ProductCategory>{category} </ProductCategory>
-      <ProductName>{title} </ProductName>
+      <ProductDetails>
+        <ProductName> 18~19 $</ProductName>
+        <ProductName>{title}</ProductName>
+        <ProductDescription>{description} </ProductDescription>
+      </ProductDetails>
     </ProductContainer>
   );
 };

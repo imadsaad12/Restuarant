@@ -22,9 +22,8 @@ export default function Category({
   };
 
   return (
-    <Container>
+    <Container  onClick={handleOnClick}>
       <Image
-        onClick={handleOnClick}
         // src={`${REACT_APP_BASE_URL}${url}`}
         src={url}
       />

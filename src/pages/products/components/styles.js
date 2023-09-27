@@ -15,6 +15,7 @@ export const CategoryPath = styled.span`
   @media (max-width: 768px) {
     font-size: 15px;
   }
+  letter-spacing: 0.5px;
 `;
 export const Category = styled.span`
   font-size: 55px;
@@ -81,7 +82,7 @@ export const ProductContainer = styled.div`
 
 
 export const ImageContainer = styled.div`
-  width: 90%;
+  width: 92%;
   position: relative;
   display: flex;
   align-items: center;
@@ -99,34 +100,35 @@ export const ProductImage = styled.img`
 `;
 export const ProductName = styled.span`
   font-size: 15px;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: #777;
   @media (max-width: 920px) {
     font-size: 20px;
   }
+  letter-spacing: 0.5px;
 `;
 
 export const ProductPrice = styled.span`
   font-size: 15px;
-  font-weight: normal;
+  /* font-weight: bold; */
   color: #777;
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  background-color: white;
-  width: fit-content;
-  height: 30px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  padding-left: 5px;
-  padding-right: 5px;
+  @media (max-width: 920px) {
+    font-size: 20px
+    ;
+  }
 `;
-export const ProductCategory = styled.span`
-  font-size: 17px;
+export const ProductDescription = styled.span`
+  font-size: 11px;
   width: fit-content;
   font-weight: normal;
-  color: #777;
+  color: #aaa9a9;
+  letter-spacing: 0.6px;
+
+`;
+export const ProductDetails = styled.div`
+display: flex;
+flex-direction: column;
+gap:5px;
+justify-content: center;
+align-items: center;
 `;

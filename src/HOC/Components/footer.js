@@ -8,16 +8,14 @@ export default function Footer() {
     <FooterContainer>
       <FooterLeft>Copyright © 2023 | Our-Resto DownTown</FooterLeft>
       <FooterRight>
-        <Link href="http://www.facebook.com">
+        <Link href="https://www.facebook.com/Rjuice.saida?mibextid=ZbWKwL">
           <BsFacebook />
         </Link>
-        <Link href="http://www.www.instagram.com">
+        <Link href="https://instagram.com/rjuice.saida?igshid=OGQ5ZDc2ODk2ZA==">
           <AiOutlineInstagram />
         </Link>
-        <Link href="http://www.twitter.com">
-          <AiOutlineTwitter />
-        </Link>
-        <Link href="http://www.tiktok.com">
+
+        <Link href="https://www.tiktok.com/@rjuice.saida?_t=8fxjorZeKQS&_r=1">
           <BsTiktok />
         </Link>
       </FooterRight>

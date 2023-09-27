@@ -5,6 +5,7 @@ export const data = {
         attributes: {
           title: "Katyosha - كتيوشا",
           category: "Cocktails",
+          description:"Sweet beverage made from ripe kiwis",
           sizes: [
             { size: "large", price: 13 },
             { size: "medium", price: 10.5 },
@@ -41,6 +42,8 @@ export const data = {
         attributes: {
           title: "Fruit Cocktail - كوكتيل فواكه",
           category: "Cocktails",
+          description:"Sweet beverage made from ripe kiwis",
+
           sizes: [
             { size: "large", price: 15.15 },
             { size: "medium", price: 18.5 },
@@ -59,6 +62,8 @@ export const data = {
         attributes: {
           title: "Cocktail Kiwi - كوكتيل كيوي",
           category: "Cocktails",
+          description:"Sweet beverage made from ripe kiwis",
+
           sizes: [
             { size: "large", price: 20.15 },
             { size: "medium", price: 17.5 },
@@ -77,6 +82,8 @@ export const data = {
         attributes: {
           title: "Avocado - أفوكادو",
           category: "Cocktails",
+          description:"Sweet beverage made from ripe kiwis",
+
           sizes: [
             { size: "large", price: 23.15 },
             { size: "medium", price: 17.1 },
@@ -95,6 +102,8 @@ export const data = {
         attributes: {
           title: "Choco Avoca",
           category: "Cocktails",
+          description:"Sweet beverage made from ripe kiwis",
+
           sizes: [
             { size: "large", price: 20.15 },
             { size: "medium", price: 15.9 },

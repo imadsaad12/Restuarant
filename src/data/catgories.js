@@ -3,7 +3,7 @@ export const data = {
     data: [
       {
         attributes: {
-          title: "Cocktails-الكوكتيلات",
+          title: "Cocktails - الكوكتيلات",
           image: {
             data: {
               attributes: {
@@ -15,7 +15,7 @@ export const data = {
       },
       {
         attributes: {
-          title: "Juices-العصائر",
+          title: "Juices - العصائر",
           image: {
             data: {
               attributes: {
@@ -27,7 +27,7 @@ export const data = {
       },
       {
         attributes: {
-          title: "Ice Cream-بوظة",
+          title: "Ice Cream - بوظة",
           image: {
             data: {
               attributes: {
@@ -39,7 +39,7 @@ export const data = {
       },
       {
         attributes: {
-          title: "Crepes-كريب",
+          title: "Crepes - كريب",
           image: {
             data: {
               attributes: {
