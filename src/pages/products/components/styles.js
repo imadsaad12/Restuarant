@@ -40,7 +40,7 @@ export const FilterInnerContainer = styled.div`
 `;
 export const ResultsContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   width: 58%;
   @media (max-width: 768px) {
@@ -48,10 +48,11 @@ export const ResultsContainer = styled.div`
   }
 `;
 
-export const Results = styled.span`
+export const Results = styled.p`
   font-weight: semi-bold;
-  font-size: 20px;
+  font-size: 40px;
   color: #777;
+  letter-spacing: 3px;
 `;
 
 export const Select = styled.select`
@@ -65,7 +66,7 @@ export const Select = styled.select`
 `;
 
 export const ProductContainer = styled.div`
-  width: 25%;
+  width: 33%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -79,7 +80,6 @@ export const ProductContainer = styled.div`
     width: 100%;
   }
 `;
-
 
 export const ImageContainer = styled.div`
   width: 92%;
@@ -113,8 +113,7 @@ export const ProductPrice = styled.span`
   /* font-weight: bold; */
   color: #777;
   @media (max-width: 920px) {
-    font-size: 20px
-    ;
+    font-size: 20px;
   }
 `;
 export const ProductDescription = styled.span`
@@ -123,12 +122,11 @@ export const ProductDescription = styled.span`
   font-weight: normal;
   color: #aaa9a9;
   letter-spacing: 0.6px;
-
 `;
 export const ProductDetails = styled.div`
-display: flex;
-flex-direction: column;
-gap:5px;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
 `;

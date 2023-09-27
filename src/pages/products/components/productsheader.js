@@ -6,27 +6,25 @@ import {
   FilterContainer,
   FilterInnerContainer,
   Select,
-  ResultsContainer
+  ResultsContainer,
 } from "./styles";
 
-export default function productsheader(props) {
-  // const [filter,setfilter]=useState()
+export default function productsheader({ category }) {
   return (
     <Header>
-      <FilterContainer>
+      {/* <FilterContainer>
         <FilterInnerContainer>
           <CategoryPath>Home / {props.category}</CategoryPath>
           <Select>
             <option>Default Sorting</option>
-            <option>Sort By Popularity</option>
             <option>Sort By Price : Low To High</option>
             <option>Sort By Price : Hight To Low</option>
           </Select>
         </FilterInnerContainer>
-      </FilterContainer>
+      </FilterContainer> */}
       <ResultsContainer>
-            <Results>Showing All 32 Items</Results>
-        </ResultsContainer>
+        <Results>~ {category}~</Results>
+      </ResultsContainer>
     </Header>
   );
 }

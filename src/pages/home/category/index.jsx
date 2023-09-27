@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 export default function Category({
   attributes: {
     title,
+    category,
     image: {
       data: {
         attributes: { url },
@@ -13,20 +14,15 @@ export default function Category({
   },
   id,
 }) {
-  const [displayCategory, setDisplayCategory] = useState(true);
-  const { REACT_APP_BASE_URL } = process.env;
   const navigate = useNavigate();
 
   const handleOnClick = () => {
-    navigate(`/products/${title}`);
+    navigate(`/products?category=${category}`);
   };
 
   return (
-    <Container  onClick={handleOnClick}>
-      <Image
-        // src={`${REACT_APP_BASE_URL}${url}`}
-        src={url}
-      />
+    <Container onClick={handleOnClick}>
+      <Image src={url} />
       <TitleContainer>
         <Title>{title}</Title>
       </TitleContainer>

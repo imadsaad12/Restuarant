@@ -10,20 +10,26 @@ import Product from "./components/product";
 
 import { useParams } from "react-router-dom";
 import { useProductsQuery } from "../../apis/products/getProducts";
-import { data } from "../../data/products";
 
 export default function Index() {
-  const { category } = useParams();
-  const { isLoading } = useProductsQuery();
+  const { isLoading, data } = useProductsQuery();
+  const searchParams = new URLSearchParams(window.location.search);
+  const category = searchParams.get("category");
 
   return (
     <>
       <ProductsLayout>
         <ProductsHeader category={category} />
         <ProductsContainer>
-          {data?.data?.data?.map((product) => {
-            return <Product {...product} />;
-          })}
+          {!isLoading &&
+            data?.data?.data?.map((product) => {
+              const isListedUnderCurrentCategory =
+                product.attributes.category === category;
+
+              return (
+                <>{isListedUnderCurrentCategory && <Product {...product} />}</>
+              );
+            })}
         </ProductsContainer>
       </ProductsLayout>
     </>
