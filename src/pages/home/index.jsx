@@ -10,7 +10,10 @@ export default function Home() {
     <Container>
       <CategoriesContainer>
         {!isLoading &&
-          data?.data?.data?.map((category) => <Category {...category} />)}
+          data?.data?.data?.map(
+            (category) =>
+              category?.attributes?.isAvailable && <Category {...category} />
+          )}
       </CategoriesContainer>
     </Container>
   );

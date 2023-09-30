@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ProductContainer,
   ProductImage,
@@ -7,6 +7,8 @@ import {
   ProductDescription,
   ImageContainer,
   ProductDetails,
+  PricesContainer,
+  Select,
 } from "./styles";
 
 const Product = ({
@@ -26,6 +28,9 @@ const Product = ({
   const arrayOfPrices = sizes.map(({ price }) => price);
   const maxPrice = Math.max(...arrayOfPrices);
   const minPrice = Math.min(...arrayOfPrices);
+  const [selectedSizePrice, setSelectedSizePrice] = useState(
+    `${minPrice} ~ ${maxPrice}`
+  );
 
   return (
     <ProductContainer>
@@ -36,10 +41,22 @@ const Product = ({
         </ProductPrice> */}
       </ImageContainer>
       <ProductDetails>
-        <ProductName>
-          {minPrice}~{maxPrice} $
-        </ProductName>
         <ProductName>{title}</ProductName>
+        <PricesContainer>
+          <ProductName style={{ fontSize: "18px" }}>
+            {selectedSizePrice} $
+          </ProductName>
+          <Select
+            onChange={({ target: { value } }) => setSelectedSizePrice(value)}
+          >
+            <option selected hidden>
+              sizes
+            </option>
+            {sizes.map(({ price, size }) => (
+              <option value={price}>{size}</option>
+            ))}
+          </Select>
+        </PricesContainer>
         <ProductDescription>{description} </ProductDescription>
       </ProductDetails>
     </ProductContainer>

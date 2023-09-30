@@ -26,8 +26,14 @@ export default function Index() {
               const isListedUnderCurrentCategory =
                 product.attributes.category === category;
 
+              const isAvailable = product?.attributes?.isAvailable;
+
               return (
-                <>{isListedUnderCurrentCategory && <Product {...product} />}</>
+                <>
+                  {isAvailable && isListedUnderCurrentCategory && (
+                    <Product {...product} />
+                  )}
+                </>
               );
             })}
         </ProductsContainer>
