@@ -23,8 +23,9 @@ export default function Index() {
         <ProductsContainer>
           {!isLoading &&
             data?.data?.data?.map((product) => {
+              console.log(product.attributes);
               const isListedUnderCurrentCategory =
-                product.attributes.category === category;
+                product?.attributes?.category === category;
 
               const isAvailable = product?.attributes?.isAvailable;
 

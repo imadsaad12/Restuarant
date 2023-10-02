@@ -13,16 +13,12 @@ import {
 
 const Product = ({
   attributes: {
-    title,
-    category,
-    description,
-    sizes,
-    image: {
-      data: {
-        attributes: { url },
-      },
-    },
-  },
+    title = "",
+    category = "",
+    description = "",
+    sizes = [],
+    image,
+  } = {},
   id,
 }) => {
   const arrayOfPrices = sizes.map(({ price }) => price);
@@ -35,7 +31,7 @@ const Product = ({
   return (
     <ProductContainer>
       <ImageContainer>
-        <ProductImage src={url} />
+        <ProductImage src={image?.data?.attributes?.url} />
         {/* <ProductPrice>
           {maxPrice} ~ {minPrice} $
         </ProductPrice> */}
