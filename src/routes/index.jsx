@@ -4,6 +4,7 @@ import {
   BrowserRouter,
   Routes as RoutesWrapper,
   Route,
+  HashRouter,
 } from "react-router-dom";
 import { HOME, PRODUCTS } from "./URLs";
 import Home from "../pages/home";
@@ -15,12 +16,12 @@ export default function Routes() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <HashRouter>
         <RoutesWrapper>
           <Route path={HOME} element={HOC(Home)} />
           <Route path={PRODUCTS} element={HOC(Products)} />
         </RoutesWrapper>
-      </BrowserRouter>
+      </HashRouter>
     </QueryClientProvider>
   );
 }

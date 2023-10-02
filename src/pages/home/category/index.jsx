@@ -17,7 +17,7 @@ export default function Category({
   const navigate = useNavigate();
 
   const handleOnClick = () => {
-    navigate(`/products?category=${category}`);
+    navigate(`/products/${category}`);
   };
 
   return (
