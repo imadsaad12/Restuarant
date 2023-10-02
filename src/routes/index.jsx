@@ -14,13 +14,13 @@ export default function Routes() {
   const queryClient = new QueryClient();
 
   return (
-    <BrowserRouter>
-      <QueryClientProvider client={queryClient}>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
         <RoutesWrapper>
           <Route path={HOME} element={HOC(Home)} />
           <Route path={PRODUCTS} element={HOC(Products)} />
         </RoutesWrapper>
-      </QueryClientProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
