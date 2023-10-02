@@ -38,7 +38,7 @@ export const FooterRight = styled.div`
   font-size: 20px;
 `;
 export const Link = styled.a`
-  color: white;
+  color: black;
   &:hover {
     color: gray;
   }
@@ -63,3 +63,12 @@ export const Logo = styled.img`
 export const HeaderContainer = styled.div`
   position: relative;
 `;
+
+export const MediaContainer = styled.div`
+width: 30%;
+display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: red;
+`;
+
