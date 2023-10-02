@@ -7,14 +7,12 @@ export default function Home() {
   const { isLoading, data } = useCategoriesQuery();
 
   return (
-    <Container>
-      <CategoriesContainer>
-        {!isLoading &&
-          data?.data?.data?.map(
-            (category) =>
-              category?.attributes?.isAvailable && <Category {...category} />
-          )}
-      </CategoriesContainer>
-    </Container>
+    <CategoriesContainer>
+      {!isLoading &&
+        data?.data?.data?.map(
+          (category) =>
+            category?.attributes?.isAvailable && <Category {...category} />
+        )}
+    </CategoriesContainer>
   );
 }

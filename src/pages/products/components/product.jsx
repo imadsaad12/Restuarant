@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   ProductContainer,
   ProductImage,
@@ -13,16 +13,12 @@ import {
 
 const Product = ({
   attributes: {
-    title,
-    category,
-    description,
-    sizes,
-    image: {
-      data: {
-        attributes: { url },
-      },
-    },
-  },
+    title = "",
+    category = "",
+    description = "",
+    sizes = [],
+    image,
+  } = {},
   id,
 }) => {
   const arrayOfPrices = sizes.map(({ price }) => price);
@@ -32,10 +28,16 @@ const Product = ({
     `${minPrice} ~ ${maxPrice}`
   );
 
+  useEffect(() => {
+    if (minPrice === maxPrice) {
+      setSelectedSizePrice(maxPrice);
+    }
+  }, []);
+
   return (
     <ProductContainer>
       <ImageContainer>
-        <ProductImage src={url} />
+        <ProductImage src={image?.data?.attributes?.url} />
         {/* <ProductPrice>
           {maxPrice} ~ {minPrice} $
         </ProductPrice> */}
@@ -53,7 +55,9 @@ const Product = ({
               sizes
             </option>
             {sizes.map(({ price, size }) => (
-              <option value={price}>{size}</option>
+              <option value={price} selected={sizes?.length === 1}>
+                {size}
+              </option>
             ))}
           </Select>
         </PricesContainer>
