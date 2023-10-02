@@ -13,8 +13,9 @@ import { useProductsQuery } from "../../apis/products/getProducts";
 
 export default function Index() {
   const { isLoading, data } = useProductsQuery();
-  const searchParams = new URLSearchParams(window.location.search);
-  const category = searchParams.get("category");
+  // const searchParams = new URLSearchParams(window.location.search);
+  // const category = searchParams.get("category");
+  const category = "Cocktails";
 
   return (
     <>
