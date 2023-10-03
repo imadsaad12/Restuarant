@@ -7,9 +7,9 @@ import { IoLocationSharp } from "react-icons/io5";
 export default function SocialMedia() {
   return (
     <MediaContainer>
-      <LocationLink href="https://www.google.com/maps/place/Sidon/@33.5614854,35.3777448,14z/data=!3m1!4b1!4m6!3m5!1s0x151ef03ff51e8597:0x181e41e3b9ff1086!8m2!3d33.5570691!4d35.372948!16zL20vMDcwcmQ?entry=ttu">
+      <LocationLink href="https://maps.app.goo.gl/9UD2oZw4Bq4tGxja9">
         <IoLocationSharp />
-        <Location>Lebanon-Saida</Location>
+        <Location>Saida-Lebanon</Location>
       </LocationLink>
       <LocationLink>
         <BsTelephoneFill />
