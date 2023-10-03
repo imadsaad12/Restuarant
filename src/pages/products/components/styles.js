@@ -129,6 +129,7 @@ export const ProductDescription = styled.span`
   color: #aaa9a9;
   letter-spacing: 0.6px;
   margin-top: 5px;
+  width: 220px;
   @media (max-width: 920px) {
     font-size: 15px;
   }

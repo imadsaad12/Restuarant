@@ -23,7 +23,7 @@ export default function index(WrappedComponent) {
         <SocialMedia />
         {<WrappedComponent />}
       </PageLayout>
-      <Footer />
+      {/* <Footer /> */}
     </Container>
   );
 }

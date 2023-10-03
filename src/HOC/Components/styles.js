@@ -14,7 +14,7 @@ export const RestaurantImage = styled.img`
   width: 100%;
   height: 13em;
   background-size: cover;
-  background-image: url(${props=>props.image});
+  background-image: url(${(props) => props.image});
 
   @media (max-width: 920px) {
     height: 10em;
@@ -49,15 +49,13 @@ export const LocationLink = styled.a`
   padding-left: 10px;
   padding-right: 10px;
   height: 20px;
-gap:6px;
-  border-left:1px solid gray;
+  gap: 6px;
+  border-left: 1px solid gray;
   cursor: pointer;
   text-decoration: none;
-  &:nth-child(1){
-    border-left:0px solid gray;
-
+  &:nth-child(1) {
+    border-left: 0px solid gray;
   }
-
 `;
 
 export const Link = styled.a`
@@ -68,11 +66,9 @@ export const Link = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-left:1px solid gray;
+  border-left: 1px solid gray;
   width: 35px;
   height: 20px;
-
-
 `;
 
 export const Logo = styled.img`
@@ -96,8 +92,8 @@ export const HeaderContainer = styled.div`
 `;
 
 export const MediaContainer = styled.div`
-width: 30%;
-display: flex;
+  width: 30%;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -113,8 +109,7 @@ display: flex;
   }
 `;
 
-
-export const Location = styled.span`
-
+export const Location = styled.a`
+  text-decoration: none;
+  color: #fff;
 `;
-

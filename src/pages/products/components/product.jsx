@@ -61,7 +61,7 @@ const Product = ({
             ))}
           </Select>
         </PricesContainer>
-        <ProductDescription>This is a description text </ProductDescription>
+        {description && <ProductDescription>{description}</ProductDescription>}
       </ProductDetails>
     </ProductContainer>
   );
