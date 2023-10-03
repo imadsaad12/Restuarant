@@ -37,11 +37,42 @@ export const FooterRight = styled.div`
   gap: 20px;
   font-size: 20px;
 `;
-export const Link = styled.a`
-  color: black;
+export const LocationLink = styled.a`
+  color: white;
   &:hover {
     color: gray;
   }
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 20px;
+gap:6px;
+  border-left:1px solid gray;
+  cursor: pointer;
+  text-decoration: none;
+  &:nth-child(1){
+    border-left:0px solid gray;
+
+  }
+
+`;
+
+export const Link = styled.a`
+  color: white;
+  &:hover {
+    color: gray;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left:1px solid gray;
+  width: 35px;
+  height: 20px;
+
+
 `;
 
 export const Logo = styled.img`
@@ -69,6 +100,21 @@ width: 30%;
 display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: red;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-top: 40px;
+  font-size: 18px;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+  @media (max-width: 450px) {
+    width: 100%;
+  }
+`;
+
+
+export const Location = styled.span`
+
 `;
 

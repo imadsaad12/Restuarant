@@ -61,7 +61,7 @@ const Product = ({
             ))}
           </Select>
         </PricesContainer>
-        <ProductDescription>{description} </ProductDescription>
+        <ProductDescription>This is a description text </ProductDescription>
       </ProductDetails>
     </ProductContainer>
   );
