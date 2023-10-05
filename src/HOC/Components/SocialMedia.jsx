@@ -15,7 +15,7 @@ export default function SocialMedia() {
         <BsTelephoneFill />
         <Location href="tel:+96181108408">81-108 408</Location>
       </LocationLink>
-      <Link href="https://www.facebook.com/Rjuice.saida?mibextid=ZbWKwL">
+      <Link href="https://www.facebook.com/profile.php?id=61551382392850&mibextid=ZbWKwL">
         <BsFacebook />
       </Link>
       <Link href="https://instagram.com/rjuice.saida?igshid=OGQ5ZDc2ODk2ZA==">
