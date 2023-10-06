@@ -19,17 +19,20 @@ export const PageLayout = styled.div`
   @media (max-width: 900px) {
     height: auto;
   }
+  display: flex;
+  flex-direction: column;
 `;
 export const WhatsappWrapper = styled.div`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #00e676;
-  width: 50px;
-  height: 50px;
-  border-radius: 20px;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #2AB03D;
+width: 50px;
+height: 50px;
+border-radius:50%;
+z-index: 999;
+display: flex;
+align-items: center;
+justify-content: center;
+
 `;

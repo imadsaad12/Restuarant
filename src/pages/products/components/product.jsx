@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   ProductContainer,
   ProductImage,
@@ -28,6 +28,12 @@ const Product = ({
     `${minPrice} ~ ${maxPrice}`
   );
 
+  useEffect(() => {
+    if (minPrice === maxPrice) {
+      setSelectedSizePrice(maxPrice);
+    }
+  }, []);
+
   return (
     <ProductContainer>
       <ImageContainer>
@@ -49,13 +55,17 @@ const Product = ({
               sizes
             </option>
             {sizes.map(({ price, size }) => (
-              <option style={{ color: "black" }} value={price}>
+              <option
+                style={{ color: "black" }}
+                value={price}
+                selected={sizes?.length === 1}
+              >
                 {size}
               </option>
             ))}
           </Select>
         </PricesContainer>
-        <ProductDescription>{description} </ProductDescription>
+        {description && <ProductDescription>{description}</ProductDescription>}
       </ProductDetails>
     </ProductContainer>
   );

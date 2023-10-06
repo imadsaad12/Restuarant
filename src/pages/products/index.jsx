@@ -8,14 +8,12 @@ import {
 import ProductsHeader from "./components/productsheader";
 import Product from "./components/product";
 
-import { useParams } from "react-router-dom";
 import { useProductsQuery } from "../../apis/products/getProducts";
+import { useParams } from "react-router-dom";
 
 export default function Index() {
   const { isLoading, data } = useProductsQuery();
-  // const searchParams = new URLSearchParams(window.location.search);
-  // const category = searchParams.get("category");
-  const category = "Cocktails";
+  const { category } = useParams();
 
   return (
     <>
@@ -24,7 +22,6 @@ export default function Index() {
         <ProductsContainer>
           {!isLoading &&
             data?.data?.data?.map((product) => {
-              console.log(product.attributes);
               const isListedUnderCurrentCategory =
                 product?.attributes?.category === category;
 
