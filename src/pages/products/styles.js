@@ -6,11 +6,12 @@ export const ProductsLayout = styled.div`
   height: 100%;
   align-items: center;
   background-color: #1e1810;
+  width: 100%;
 `;
 
 export const ProductsContainer = styled.div`
   width: 60%;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   padding-top: 10px;

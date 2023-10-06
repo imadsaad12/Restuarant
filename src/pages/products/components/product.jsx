@@ -38,9 +38,6 @@ const Product = ({
     <ProductContainer>
       <ImageContainer>
         <ProductImage src={image?.data?.attributes?.url} />
-        {/* <ProductPrice>
-          {maxPrice} ~ {minPrice} $
-        </ProductPrice> */}
       </ImageContainer>
       <ProductDetails>
         <ProductName>{title}</ProductName>
