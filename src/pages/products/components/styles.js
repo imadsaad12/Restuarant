@@ -106,12 +106,14 @@ export const ProductImage = styled.img`
 `;
 export const ProductName = styled.span`
   font-size: 15px;
-  /* color: #777; */
+  width: 100%;
   color: white;
-  @media (max-width: 920px) {
-    font-size: 20px;
-  }
   letter-spacing: 0.5px;
+  text-align: center;
+
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
 `;
 
 export const ProductPrice = styled.span`
@@ -146,6 +148,7 @@ export const ProductDetails = styled.div`
 export const PricesContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  /* justify-content: space-between; */
   width: 100%;
+  align-self: center;
 `;

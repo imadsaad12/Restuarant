@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Components/header";
-import Footer from "./Components/footer";
 import { Container, PageLayout, WhatsappWrapper } from "./styles";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import SocialMedia from "./Components/SocialMedia";

@@ -29,6 +29,7 @@ const Product = ({
   );
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (minPrice === maxPrice) {
       setSelectedSizePrice(maxPrice);
     }
@@ -38,14 +39,13 @@ const Product = ({
     <ProductContainer>
       <ImageContainer>
         <ProductImage src={image?.data?.attributes?.url} />
-        {/* <ProductPrice>
-          {maxPrice} ~ {minPrice} $
-        </ProductPrice> */}
       </ImageContainer>
       <ProductDetails>
         <ProductName>{title}</ProductName>
         <PricesContainer>
-          <ProductName style={{ fontSize: "18px" }}>
+          <ProductName
+            style={{ fontSize: "18px", width: "50%", alignSelf: "center" }}
+          >
             {selectedSizePrice} $
           </ProductName>
           <Select

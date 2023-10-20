@@ -13,6 +13,9 @@ export const Title = styled.p`
   letter-spacing: 1px;
   word-spacing: 2px;
   cursor: pointer;
+  @media (max-width: 330px) {
+    font-size: 1.5em;
+  }
 `;
 
 export const Image = styled.img`
@@ -23,7 +26,6 @@ export const Image = styled.img`
   line-height: 0;
   cursor: pointer;
 `;
-
 
 export const TitleContainer = styled.div`
   position: absolute;

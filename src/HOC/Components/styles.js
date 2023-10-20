@@ -56,6 +56,11 @@ export const LocationLink = styled.a`
   &:nth-child(1) {
     border-left: 0px solid gray;
   }
+
+  @media (max-width: 450px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 `;
 
 export const Link = styled.a`
@@ -92,7 +97,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const MediaContainer = styled.div`
-  width: 30%;
+  width: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -102,9 +107,10 @@ export const MediaContainer = styled.div`
   padding-top: 40px;
   font-size: 18px;
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 330px) {
+    font-size: 11px;
     width: 100%;
   }
 `;
