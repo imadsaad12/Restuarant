@@ -111,7 +111,7 @@ export const ProductName = styled.span`
   letter-spacing: 0.5px;
   text-align: center;
 
-  @media (max-width: 450px) {
+  @media (max-width: 330px) {
     font-size: 12px;
   }
 `;
