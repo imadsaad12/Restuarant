@@ -82,7 +82,7 @@ export const ProductContainer = styled.div`
   @media (max-width: 768px) {
     width: 50%;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 920px) {
     width: 100%;
   }
 `;

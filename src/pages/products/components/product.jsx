@@ -55,7 +55,11 @@ const Product = ({
               sizes
             </option>
             {sizes.map(({ price, size }) => (
-              <option value={price} selected={sizes?.length === 1}>
+              <option
+                style={{ color: "black" }}
+                value={price}
+                selected={sizes?.length === 1}
+              >
                 {size}
               </option>
             ))}
