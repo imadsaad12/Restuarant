@@ -59,7 +59,7 @@ export const Results = styled.p`
 export const Select = styled.select`
   background-color: transparent;
   font-size: 16px;
-  width: 55%;
+  width: fit-content;
   text-align: center;
   border-radius: 5px;
   border-color: white;
