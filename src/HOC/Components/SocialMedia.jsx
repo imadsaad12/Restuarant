@@ -18,7 +18,7 @@ export default function SocialMedia() {
       <Link href="https://www.facebook.com/profile.php?id=61551382392850&mibextid=ZbWKwL">
         <BsFacebook />
       </Link>
-      <Link href="https://instagram.com/rjuice.saida?igshid=OGQ5ZDc2ODk2ZA==">
+      <Link href="https://www.instagram.com/ramadanjuice.saida?igsh=MXJmYWdwZ294cmVxZA==">
         <AiOutlineInstagram />
       </Link>
 
